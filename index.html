@@ -50,15 +50,7 @@
           </li>
 
           <li>
-            <a href="#network" class="navbar-link" data-nav-link>Our Network</a>
-          </li>
-
-          <li>
             <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-          </li>
-
-          <li>
-            <a href="#advertisers" class="navbar-link" data-nav-link>Advertisers</a>
           </li>
 
           <li>
@@ -101,7 +93,7 @@
               strategically placed in high-traffic local businesses throughout your area.
             </p>
 
-            <a href="#" class="btn btn-primary">Advertise With Us</a>
+            <a href="#contact" class="btn btn-primary">Advertise With Us</a>
 
           </div>
 
@@ -359,12 +351,17 @@
             help grow your business.
           </p>
 
-          <form action="" class="contact-form">
+          <!-- Added action URL for FormSubmit and redirect parameter -->
+          <form action="https://formsubmit.co/kkpatel911@gmail.com" method="POST" class="contact-form">
+            <!-- Hidden fields for FormSubmit configuration -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_subject" value="New Pixel Advertising Contact Submission">
+            <input type="hidden" name="_captcha" value="false">
 
             <div class="input-wrapper">
               <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
 
-              <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+              <input type="email" name="email" aria-label="email" placeholder="Email address*" required
                 class="input-field">
             </div>
 
@@ -405,27 +402,6 @@
 
                   <a href="mailto:info@pixeladvertising.com" class="card-link">info@pixeladvertising.com</a>
                   <a href="mailto:sales@pixeladvertising.com" class="card-link">sales@pixeladvertising.com</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="contact-card">
-
-                <div class="card-icon">
-                  <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Visit Our Office</h3>
-
-                  <address class="card-address">
-                    123 Main Street, Suite 200<br>
-                    New York, NY 10001, USA
-                  </address>
 
                 </div>
 
