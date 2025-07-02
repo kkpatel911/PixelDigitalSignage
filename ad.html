@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel - Digital Signage Advertising Agency</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NNE5VHQXPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-NNE5VHQXPG');
+</script>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">Pixel</a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section home" id="home" aria-label="home">
+        <div class="container">
+          <h2 class="h2 section-title">Live Ad</h2>
+          <video autoplay muted loop playsinline
+            style="width: 80%; justify-content: center; display: block; margin: 0 auto;">
+            <source src="./assets/videos/Both_Location.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Get in Touch With Us</h2>
+
+          <p class="section-text">
+            Ready to elevate your local advertising or become a host location? Contact us today to learn how Pixel can
+            help grow your business.
+          </p>
+
+          <!-- Added action URL for FormSubmit and redirect parameter -->
+          <form action="https://formsubmit.co/thelocalpixel@gmail.com" method="POST" class="contact-form">
+            <!-- Hidden fields for FormSubmit configuration -->
+            <input type="hidden" name="_next" value="https://thelocalpixel.com/">
+            <input type="hidden" name="_subject" value="New Pixel Advertising Contact Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Thank you for your message! We'll get back to you soon.">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" aria-label="name" placeholder="Your name" class="input-field">
+
+              <input type="email" name="email" aria-label="email" placeholder="Email address" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <input type="text" name="Business name" aria-label="Business name" placeholder="Business name"
+                class="input-field">
+
+              <input type="tel" id="phone" aria-label="phone" placeholder="Phone number" class="input-field"
+                maxlength="12">
+
+            </div>
+
+            <textarea name="message" aria-label="message" placeholder="Your message..." class="input-field"></textarea>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="terms_and_policy" id="terms" class="checkbox">
+
+              <label for="terms" class="label">
+                Accept <a href="#" class="label-link">Terms of Services</a> and <a href="#" class="label-link">Privacy
+                  Policy</a>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Email Us</h3>
+
+                  <a href="mailto:info@thelocalpixel.com" class="card-link">info@thelocalpixel.com</a>
+                  <a href="mailto:help@thelocalpixel.com" class="card-link">help@thelocalpixel.com</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Call Us</h3>
+
+                  <a href="tel:4234018899" class="card-link">423-401-8899</a>
+                  <a href="tel:4234018663" class="card-link">423-401-8663</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2025 All Rights Reserved by <a href="#" class="copyright-link">Pixel Digital Signage</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
